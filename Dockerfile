@@ -1,17 +1,9 @@
-"""Console script for mlops_project."""
-
 import typer
-from rich.console import Console
-
-from mlops_project import utils
 
 app = typer.Typer()
-console = Console()
-
 
 @app.command()
 def main():
-    
     print("Hello from my DTU MLOps project!")
 
 if __name__ == "__main__":
