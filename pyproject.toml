@@ -23,7 +23,7 @@ test = [
     "coverage",  # testing
     "pytest",  # testing
     "ruff",  # linting
-    "ty", # checking types
+    
     "ipdb", # debugging
 ]
 
