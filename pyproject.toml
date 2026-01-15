@@ -27,6 +27,14 @@ test = [
     "uvicorn",
     "ipdb", # debugging
 ]
+dependencies = [
+  "typer",
+  "fastapi",
+  "uvicorn[standard]"
+]
+#git add pyproject.toml
+#git commit -m "Add FastAPI and Uvicorn for Cloud Run"
+#git push
 
 [project.urls]
 bugs = "https://github.com/NandiniKarnati21/mlops_project/issues"
@@ -56,3 +64,4 @@ select = [
 
 [tool.uv]
 package = true
+
