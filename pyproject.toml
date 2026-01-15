@@ -23,7 +23,8 @@ test = [
     "coverage",  # testing
     "pytest",  # testing
     "ruff",  # linting
-    
+     "fastapi",
+    "uvicorn",
     "ipdb", # debugging
 ]
 

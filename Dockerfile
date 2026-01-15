@@ -1,10 +1,14 @@
-import typer
 
-app = typer.Typer()
+FROM python:3.10-slim
 
-@app.command()
-def main():
-    print("Hello from my DTU MLOps project!")
+WORKDIR /app
 
-if __name__ == "__main__":
-    app()
+COPY pyproject.toml README.md ./
+COPY src ./src
+
+RUN pip install --upgrade pip
+RUN pip install .
+
+ENV PORT=8080
+
+CMD ["uvicorn", "mlops_project.app:app", "--host", "0.0.0.0", "--port", "8080"]
